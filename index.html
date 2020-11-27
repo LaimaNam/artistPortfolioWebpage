@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honeycomb Grid Layout In Pure CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="menu-container">
+        <li><a href="" class="menu-link">Portfolio</a></li>
+        <li><a href="" class="menu-link">About</a></li>
+        <div class="img-on-img">
+          <li><img src="/img/Pointy Thingy.png" alt="logo" class="logo1" /></li>
+          <li><img src="/img/Logo.png" alt="logo" class="logo" /></li>
+        </div>
+        <li><a href="" class="menu-link">Blog</a></li>
+        <li><a href="" class="menu-link">Get in touch</a></li>
+      </ul>
+    </nav>
+
+    <div class="section hero">
+      <ul class="honeycomb">
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="/img/Clip.png" />
+          <div class="honeycomb-cell_title"></div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip2.png" />
+          <div class="honeycomb-cell_title">Web design</div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip3.png" />
+          <div class="honeycomb-cell_title">Illustration</div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip4.png" />
+          <div class="honeycomb-cell_title"></div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip5.png" />
+          <div class="honeycomb-cell_title"></div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip6.png" />
+          <div class="honeycomb-cell_title">Animation</div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip7.png" />
+          <div class="honeycomb-cell_title"></div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip8.png" />
+          <div class="honeycomb-cell_title"></div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip9.png" />
+          <div class="honeycomb-cell_title">Graphic design</div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip10.png" />
+          <div class="honeycomb-cell_title">3D design</div>
+        </li>
+        <li class="honeycomb-cell">
+          <img class="honeycomb-cell_image" src="img/Clip11.png" />
+          <div class="honeycomb-cell_title"></div>
+        </li>
+        <li class="honeycomb-cell honeycomb_placeholder"></li>
+      </ul>
+    </div>
+
+    <!-- section: ABOUT -->
+
+    <div class="section about">
+      <div class="about-wrapper">
+        <div class="hex-wrapper">
+          <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+          </div>
+        </div>
+        <div class="text-about">
+          <h3 class="name">Smith Anderson</h3>
+          <h4 class="position">Illustrator & Character Designer</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            porttitor, nibh at sagittis tristique, enim magna pretium augue,
+            eget consectetur sem dui non urna. Integer gravida, diam congue
+            molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit
+            vel metus. Morbi egestas sit amet velit eget venenatis. Mauris
+            porttitor, nibh at sagittis tristique, enim magna pretium augue,
+            eget consectetur sem dui non urna
+          </p>
+          <div class="media-icons">
+            <a href="https://facebook.com" target="_blank"
+              ><img
+                class="media-img"
+                src="/img/Facebook.png"
+                alt="facebook logo"
+            /></a>
+            <a href="https://twitter.com" target="_blank"
+              ><img class="media-img" src="/img/Twitter.png" alt="twitter logo"
+            /></a>
+            <a href="https://pinterest.com" target="_blank"
+              ><img
+                class="media-img"
+                src="/img/Pinterest.png"
+                alt="pinterest logo"
+            /></a>
+            <a href="https://linkedin.com" target="_blank"
+              ><img
+                class="media-img"
+                src="/img/Linkedin.png"
+                alt="linkedin logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section: CONTACT FORM -->
+    <div class="contact-form">
+      <div class="box-wrapper">
+        <div class="title-wrapper">
+          <h3>Get In Touch</h3>
+          <h4>In order to get in touch use the contact form below:</h4>
+        </div>
+        <div class="form-wrapper">
+          <form id="contact" action="" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name (Required)"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email (Required)"
+              required
+            />
+            <textarea
+              placeholder="Your message..."
+              name="message"
+              required
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button
+              class="form-button"
+              name="submit"
+              type="submit"
+              id="contact-submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+        <div class="contact-wrapper">
+          <h3>
+            <strong>Quisque Hendrerit</strong>: purus dapibus, ornare nibh
+            vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet
+            volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi
+            vitae.
+          </h3>
+
+          <h4>Elm St. 14/05 Lost City + 3528 331 86 35 info@hexalcorp.com</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="section arr">
+      <div>
+        <span
+          >&copy;
+          <?php echo date('Y'); 
+           ?>
+          Built with lots of caffeine. All rights reserved Laima Nam</span
+        >
+      </div>
+    </div> -->
+  </body>
+</html>
