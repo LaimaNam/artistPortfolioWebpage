@@ -407,6 +407,7 @@ a:active {
   padding: 15px 30px;
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
 }
 
 .contact-form .contact-wrapper {
