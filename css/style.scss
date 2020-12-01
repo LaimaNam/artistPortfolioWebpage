@@ -25,6 +25,24 @@ body {
 nav {
   background-color: #323232;
 
+  // BURGERIS -------->
+  .toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin: 20px;
+
+    .bar {
+      height: 3px;
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+    }
+  }
+  //   ---------------------->
+
   .menu-container {
     text-transform: uppercase;
     list-style: none;
@@ -389,7 +407,40 @@ a:active {
   nav .menu-container:nth-child(4) {
     padding-right: 0;
   }
+
+  // Burger menu --------------------------->
+  nav {
+    display: grid;
+    grid-template-areas:
+      "button"
+      "menubox";
+  }
+
+  nav .toggle-button {
+    display: flex;
+    grid-area: button;
+  }
+
+  nav .menu-container {
+    display: none;
+    flex-direction: column;
+    grid-area: menubox;
+  }
+
+  nav .menu-container .menu-link {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav .menu-container .menu-link a {
+    padding: 0.5rem 1rem;
+  }
+  nav .active {
+    display: flex;
+  }
 }
+
 @media (min-width: 550px) and (max-width: 825px) {
   .contact-form .box-wrapper {
     padding-left: 0px;

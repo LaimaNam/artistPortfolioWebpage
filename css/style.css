@@ -32,6 +32,27 @@ nav {
   /* ----nav logo ------------------------*/
 }
 
+nav .toggle-button {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  margin: 20px;
+}
+
+nav .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
 nav .menu-container {
   text-transform: uppercase;
   list-style: none;
@@ -453,6 +474,45 @@ a:active {
   }
   nav .menu-container:nth-child(4) {
     padding-right: 0;
+  }
+  nav {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "button" "menubox";
+  }
+  nav .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: button;
+  }
+  nav .menu-container {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: menubox;
+  }
+  nav .menu-container .menu-link {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  nav .menu-container .menu-link a {
+    padding: 0.5rem 1rem;
+  }
+  nav .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
