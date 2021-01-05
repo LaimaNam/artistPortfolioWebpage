@@ -302,7 +302,7 @@ a:active {
   width: 250px;
   height: 144.34px;
   margin: 72.17px 0;
-  background-image: url(/img/about.png);
+  background-image: url(../img/about.png);
   background-size: auto 288px;
   background-position: center;
   -ms-grid-row: 1;
